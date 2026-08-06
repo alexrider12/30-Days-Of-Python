@@ -64,3 +64,17 @@ print("Nr.27", company.endswith('coding'))
 print("Nr.28", ' Coding For All '.strip())
 # Nr.29
 print("Nr.29", '30DaysOfPython'.isidentifier(), 'thirty_days_of_python'.isidentifier)
+# Nr.30
+programmingLanguages = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+string = '# '.join(programmingLanguages)
+print("Nr.30", string)
+# Nr.31
+print("Nr.31 \n Hello")
+# Nr.32
+print("Nr.32")
+print("Name\tAlter\tLand\tStadt")
+print("Jakob\t15\tDE\tEntenhausen")
+# Nr.33
+print(f"Radius: 10m\nFläche:{10**2*3.14}")
+# Nr.34
+print(f"8-6={8-6}\n8+4={8+4}\n8**6={8**6}")
