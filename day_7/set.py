@@ -11,4 +11,18 @@ print(it_companies)
 it_companies.update(["X.com","Vector"])
 
 it_companies.discard("Facebook")
-#Discard vs. Pop-> 
+print("Discard vs. Pop->\nBei pop kommt eine Fehlermeldung wenn das Element nicht exestiert") 
+
+# Level 2
+
+AB = A.union(B)
+#AB.union(A, B)
+print(AB)
+
+print(A.intersection(B))
+
+print(A.issubset(B))
+
+print(A.isdisjoint(B))
+
+
