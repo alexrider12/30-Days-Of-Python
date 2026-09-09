@@ -1,4 +1,4 @@
-[
+country_data = [
     {
         "name": "Afghanistan",
         "capital": "Kabul",
@@ -2618,3 +2618,35 @@
         "currency": "Botswana pula"
     }
 ]
+
+print("---3.1---")
+language_count =0
+for country in country_data:
+    # print(country)
+    if "languages" in country:
+        language_count += len(country["languages"])
+print(f"Total Languages in Data: {language_count}")
+
+print("---3.2---")
+languages_common = {}
+
+for country in country_data:
+    if "languages" in country:
+        # print(country["languages"])
+        for lang in country["languages"]:
+            if lang in languages_common:
+                languages_common[lang] += 1
+            else:
+                # print(lang, type(lang))
+                languages_common[lang] = 1
+print(languages_common)
+# unique_languages = set()
+# for language in languages_common.keys():
+#     unique_languages.add(language)
+# print(unique_languages)
+# for language in languages_common:
+#     if language is "German":
+#         print(language, languages_common[language])
+# languages_common.
+sorted_lang_common = sorted(languages_common.items(), key= lambda x:x[1], reverse=True)
+print(f"sorted:\n \n", sorted_lang_common[:10])
